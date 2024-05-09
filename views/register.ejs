@@ -1,0 +1,46 @@
+<%- include('partials/header.ejs') %>
+
+<section class="registration">
+  <h2 class="heading">
+    <i class="fas fa-headset"></i>Register <span>GUEST</span>
+  </h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img src="/images/registration-icon.png" alt="background" height="400"/>
+      </div>
+      <form id="registration-form">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="field">
+            <input type="text" name="username" placeholder="Username" required />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Email" required />
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone" />
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer.ejs') %>
